@@ -2,18 +2,18 @@ import {View, Text, StyleSheet} from 'react-native';
 import {Card, Button} from 'react-native-paper';
 const EventCount = () => {
   return (
-    <View>
-      <Card style={styles.message}>
+    <View style={styles.message}>
+      <Card >
         <Card.Content>
           <View style={styles.container}>
             <View style={styles.welcome}>
               <Text style={styles.title}>Hello</Text>
               <Text style={styles.description}>
-                Welcome Ajay Muttamsetty Muttamsetty !!!
+                Welcome Ajay Muttamsetty Muttamsetty ok ok!!!
               </Text>
             </View>
             <View style={styles.count}>
-              <Text>1000</Text>
+              <Text>100</Text>
             </View>
           </View>
         </Card.Content>
@@ -51,15 +51,19 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     backgroundColor: 'white',
     elevation: 4,
-    shadowColor: 'black',
-    shadowOpacity: 0.5,
-    shadowOffset: {width: 0, height: 5},
+  //  shadowColor: 'black',
+  //  shadowOpacity: 0.5,
+  //  shadowOffset: {width: 0, height: 5},
   },
   count: {
-    padding: 25,
-    border: 2,
-    borderColor: '#000000',
-    borderWidth: 2,
+    height:75,
+    width:75,
+    overflow:'hidden',
+    borderWidth: 5,
     borderRadius: 50,
+    borderTopColor:'red',
+    borderBottomColor:'red',
+    justifyContent:'center',
+    alignItems:'center'
   },
 });
